@@ -8,10 +8,16 @@ Google analytics data aggregator.
 npm install gaggregator
 ```
 
+## Run as npm
+
+```
+node src/index.js --data ./src/data.csv
+```
+
 ## Run with Python
 
 ```
-./gaggregator.sh data.csv | head
+./python/gaggregator.sh ./python/data.csv | head
 ```
 
 ## Sample output
