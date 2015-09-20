@@ -1,0 +1,23 @@
+{
+  "name": "gaggregator",
+  "version": "1.0.0",
+  "description": "Google analytics data aggregator.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebabel-eu/gaggregator.git"
+  },
+  "keywords": [
+    "google analytics",
+    "aggregator"
+  ],
+  "author": "Nadjib Amar <hello@ebabel.eu> (http://ebabel.eu/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebabel-eu/gaggregator/issues"
+  },
+  "homepage": "https://github.com/ebabel-eu/gaggregator#readme"
+}
