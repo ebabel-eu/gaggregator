@@ -14,6 +14,15 @@ npm install gaggregator
 node src/index.js --data ./src/data.csv
 ```
 
+
+
+
+
+
+
+
+
+
 ## Run with Python
 
 ```
