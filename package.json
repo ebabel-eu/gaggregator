@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ebabel-eu/gaggregator/issues"
   },
-  "homepage": "https://github.com/ebabel-eu/gaggregator#readme"
+  "homepage": "https://github.com/ebabel-eu/gaggregator#readme",
+  "dependencies": {
+    "csvtojson": "~0.4.2"
+  }
 }
