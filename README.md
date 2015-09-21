@@ -12,38 +12,29 @@ Google analytics data aggregator.
 npm install gaggregator
 ```
 
-## Run as npm
+## Usage in Node.js
 
 ```
-node src/index.js --data ./src/data.csv
-```
-
-
-
-
-
-
-
-
-
-
-## Run with Python
-
-```
-./python/gaggregator.sh ./python/data.csv | head
+var gaggregator = require('gaggegrator');
+var path = './src/data-copy.csv';
+gaggregator.process(path);
 ```
 
 ## Sample output
 
 ```
-7374
-2533 	Chrome 40 Macintosh
-437 	Safari 8 iOS
-389 	Internet Explorer 11 Windows
-347 	Chrome 36 Windows
-297 	Internet Explorer 9 Windows
-225 	Safari 7 iOS
-186 	Chrome 42 Windows
-171 	Internet Explorer 8 Windows
-118 	(not set) (not set) (not set)
+[
+    {
+        "Browser": "Safari",
+        "BrowserVersion": 8,
+        "OperatingSystem": "iOS",
+        "Sessions": 437
+    },
+    {
+        "Browser": "InternetExplorer",
+        "BrowserVersion": 11,
+        "OperatingSystem": "Windows",
+        "Sessions": 389
+    }
+]
 ```
