@@ -2,6 +2,8 @@
 
 [![wercker status](https://app.wercker.com/status/10779ff33d14b4dba0f46e4920203ff9/m/master "wercker status")](https://app.wercker.com/project/bykey/10779ff33d14b4dba0f46e4920203ff9)
 
+[![NPM](https://nodei.co/npm/gaggregator.png)](https://npmjs.org/package/gaggregator)
+
 Google analytics data aggregator.
 
 ## Install
