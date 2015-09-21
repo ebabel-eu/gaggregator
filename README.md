@@ -1,5 +1,7 @@
 # gaggregator
 
+[![wercker status](https://app.wercker.com/status/10779ff33d14b4dba0f46e4920203ff9/m/master "wercker status")](https://app.wercker.com/project/bykey/10779ff33d14b4dba0f46e4920203ff9)
+
 Google analytics data aggregator.
 
 ## Install
