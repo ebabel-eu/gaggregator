@@ -4,11 +4,11 @@
   "description": "Google analytics data aggregator.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ebabel-eu/gaggregator.git"
+    "url": "https://github.com/ebabel-eu/gaggregator.git"
   },
   "keywords": [
     "google analytics",
@@ -22,5 +22,13 @@
   "homepage": "https://github.com/ebabel-eu/gaggregator#readme",
   "dependencies": {
     "csvtojson": "~0.4.2"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "istanbul": "~0.3.20",
+    "mocha": "~2.3.2"
   }
 }

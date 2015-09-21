@@ -2,28 +2,11 @@ box: node
 build:
   steps:
 
-    # Install grunt.
-    - script:
-        name: Grunt-cli installation
-        code: sudo npm install -g grunt-cli --allow-root
-
-    # Install bower.
-    - script:
-        name: Bower installation
-        code: sudo npm install -g bower --allow-root
-
     # Install npm dependencies.
     - npm-install
 
-    # Install client-side libraries.
-    - script:
-        name: Client-side libraries
-        code: sudo bower install --allow-root
-
-    # Run grunt to build the game.
-    - script:
-        name: Build the game
-        code: grunt wercker
+    # Run unit tests.
+    - npm-test
 
 # Deploy to production
 deploy:
