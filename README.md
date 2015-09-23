@@ -38,3 +38,23 @@ gaggregator.process(path);
     }
 ]
 ```
+
+## Sample code
+
+```
+node ./src/sample.js
+```
+
+## Run unit tests (one off)
+
+```
+npm test
+```
+
+## Continuously run unit tests while developing
+
+```
+npm run test-watch
+```
+
+Note: to break from watch on Mac OS, use CTRL C twice.
