@@ -9,7 +9,7 @@ Google analytics data aggregator.
 ## Install
 
 ```
-npm install gaggregator
+npm install gaggregator --save
 ```
 
 ## Usage in Node.js
