@@ -39,6 +39,12 @@ gaggregator.process(path);
 ]
 ```
 
+## Sample code
+
+```
+node ./src/sample.js
+```
+
 ## Run unit tests (one off)
 
 ```
