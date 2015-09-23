@@ -4,7 +4,8 @@
   "description": "Google analytics data aggregator.",
   "main": "src/index.js",
   "scripts": {
-    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js"
+    "test": "istanbul cover -x *.test.js _mocha --report text --report html --report lcov -- -R spec src/index.test.js",
+    "test-watch": "istanbul cover -x *.test.js _mocha --report lcov -- -R spec src/index.test.js -w"
   },
   "repository": {
     "type": "git",
