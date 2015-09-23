@@ -16,8 +16,13 @@ npm install gaggregator --save
 
 ```
 var gaggregator = require('gaggegrator');
-var path = './src/data-copy.csv';
-gaggregator.process(path);
+
+aggregator.process({
+    path: './src/data-copy.csv',
+    callback: function (data) {
+        console.log(aggregator.result);
+    }
+});
 ```
 
 ## Sample output
