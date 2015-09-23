@@ -28,3 +28,7 @@ node_modules
 
 # Documentation generated with JSDoc
 doc
+
+# Visual Studio Code
+.vscode
+
