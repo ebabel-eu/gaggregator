@@ -1,5 +1,9 @@
 function process (options) {
 
+    if (!options || !options.path) {
+        throw new Error('No path has been supplied.');
+    }
+
     // Converter Class
     var path = options.path || './src/data.csv';
     var callback = options.callback || undefined;
@@ -18,10 +22,14 @@ function process (options) {
     // end_parsed will be emitted once parsing finished.
     converter.on('end_parsed', function (jsonObj) {
         // Result JSON object.
+        module.exports.result = jsonObj;
+
         // todo: instead of using a callback,
         // think about a nicer way to pass that jsonObj to the caller,
         // something with promises?
-        callback(jsonObj)
+        if (callback && typeof(callback) === 'function') {
+            callback(jsonObj);
+        }
     });
 
     // Read from file
@@ -30,6 +38,7 @@ function process (options) {
 
 module.exports = {
 
-    process: process
+    process: process,
+    result: undefined
 
 };
